@@ -1,20 +1,50 @@
 # Classification-using-Keras
 
 
-# Summary of Steps:
 
-Data preprocessing including categorical encoding and normalization.
 
-Model defined using Keras with sequential layers: Dense, ReLU, and Sigmoid.
 
-Training performed with binary cross-entropy loss and Adam optimizer.
+# Objective:
+Predict whether a customer will churn using a deep learning model implemented in Keras.
 
-Performance evaluated using accuracy and validation loss.
+# Workflow Summary:
+## 1. Data Cleaning & Preparation
+Preprocessed features:
 
-Final Result:
+Converted categorical to numerical.
 
-Final training accuracy: ~87.5%
+Scaled numerical variables using normalization.
 
-Validation accuracy: ~86.3%
+## 2. Model Architecture
+Built a neural network using Keras.Sequential():
 
-Loss curves indicate a stable model with minor overfitting.
+Input layer
+
+Dense hidden layers with ReLU activations
+
+Output layer with Sigmoid for binary classification
+
+## 3. Training
+Loss Function: binary_crossentropy
+
+Optimizer: adam
+
+Epochs: 100+ with batch size tuned
+
+Included validation_split to monitor overfitting.
+
+## 4. Evaluation
+Used:
+
+Training/Validation Accuracy
+
+Training/Validation Loss
+
+Accuracy curves to assess performance
+
+#  Results:
+Final Training Accuracy: ~87.5%
+
+Validation Accuracy: ~86.3%
+
+Overfitting was minimal, with close training/validation curves.
